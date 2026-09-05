@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/small.css">
     <link rel="stylesheet" href="estilos/larger.css">
+
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -23,6 +26,59 @@
             <li><a href="#">Final</a></li>
         </ul>
     </nav>
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>São Paulo, Brasil</h2>
+
+            <figure>
+                <img src="imagens/sao-paulo.webp" alt="Vista da cidade de São Paulo">
+                <figcaption>São Paulo</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Certificado de Programação Web e Computação</h2>
+
+            <div class="course-buttons">
+                <button id="all" type="button">Todos os Cursos</button>
+                <button id="wdd" type="button">Cursos WDD</button>
+                <button id="cse" type="button">Cursos CSE</button>
+            </div>
+
+            <div id="course-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Naiara Cassimiro</p>
+        <p>Brasil</p>
+        <p>WDD 231</p>
+        <p id="lastModified"></p>
+
+        <div class="social">
+            <a href="https://github.com/Naiara-Cassimiro" target="_blank">
+                <img src="imagens/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="imagens/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="imagens/instagram.svg" alt="Instagram" width="16" height="16">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
