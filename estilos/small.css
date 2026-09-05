@@ -67,3 +67,7 @@ header span {
 #animateme.exibir {
     display: block;
 }
+
+.menu-links .current a {
+    background-color: #ddd;
+}
