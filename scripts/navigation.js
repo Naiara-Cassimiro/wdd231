@@ -1,5 +1,7 @@
-const navButton = document.querySelector('#botao-de-nav');
+const botaoDeNav = document.querySelector('#botao-de-nav');
+const barraNavegacao = document.querySelector('#animateme');
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
+botaoDeNav.addEventListener('click', () => {
+    botaoDeNav.classList.toggle('exibir');
+    barraNavegacao.classList.toggle('exibir');
 });
