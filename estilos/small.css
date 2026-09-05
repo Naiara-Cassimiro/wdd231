@@ -90,3 +90,9 @@ header span {
     width: 22px;
     height: 22px;
 }
+
+.completed {
+    background-color: #d8f3dc;
+    border-left: 5px solid #2d6a4f;
+    font-weight: bold;
+}
