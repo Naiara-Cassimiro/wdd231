@@ -12,6 +12,11 @@ function displayMembers(members) {
     members.forEach((member) => {
         const card = document.createElement("section");
 
+        const image = document.createElement("img");
+        image.src = `images/${member.image}`;
+        image.alt = `Logotipo da empresa ${member.name}`;
+        image.loading = "lazy";
+
         const name = document.createElement("h2");
         name.textContent = member.name;
 
@@ -25,7 +30,9 @@ function displayMembers(members) {
         website.href = member.website;
         website.textContent = "Visitar site";
         website.target = "_blank";
+        website.rel = "noopener";
 
+        card.appendChild(image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);

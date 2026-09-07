@@ -9,11 +9,11 @@
             "membershipLevel": 3
         },
         {
-            "name": "Café Central SP",
+            "name": "Confeitaria Sabor e Arte",
             "address": "Rua Augusta, 450 - São Paulo, SP",
             "phone": "+55 11 3000-1001",
             "website": "https://example.com",
-            "image": "cafe-central.webp",
+            "image": "confeitaria-sabor-e-arte.webp",
             "membershipLevel": 2
         },
         {
