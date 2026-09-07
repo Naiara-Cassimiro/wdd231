@@ -16,7 +16,7 @@ function displayMembers(members) {
         const card = document.createElement("section");
 
         const image = document.createElement("img");
-        image.src = `images/${member.image}`;
+        image.src = `imagens/${member.image}`;
         image.alt = `Logotipo da empresa ${member.name}`;
         image.loading = "lazy";
 
