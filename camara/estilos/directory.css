@@ -66,6 +66,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    min-height: 1200px;
 }
 
 #members section {
