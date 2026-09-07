@@ -1,4 +1,4 @@
-const url = "data/members.json";
+const url = "data/membros.json";
 const membersContainer = document.querySelector("#members");
 
 const gridButton = document.querySelector("#grid");
