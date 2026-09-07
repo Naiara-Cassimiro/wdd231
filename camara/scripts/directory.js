@@ -15,11 +15,17 @@ function displayMembers(members) {
     members.forEach((member) => {
         const card = document.createElement("section");
 
-        const image = document.createElement("img");
         image.src = `imagens/${member.image}`;
         image.alt = `Logotipo da empresa ${member.name}`;
-        image.loading = "lazy";
+        image.width = 300;
+        image.height = 200;
 
+        if (member === members[0]) {
+            image.loading = "eager";
+            image.fetchPriority = "high";
+        } else {
+            image.loading = "lazy";
+        }
         const name = document.createElement("h2");
         name.textContent = member.name;
 
