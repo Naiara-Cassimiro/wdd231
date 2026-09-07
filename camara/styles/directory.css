@@ -93,3 +93,40 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+/* Visualização em grade */
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Visualização em lista */
+#members.list {
+    display: block;
+}
+
+#members.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+}
+
+#members.list img {
+    display: none;
+}
+
+/* Telas maiores */
+@media screen and (min-width: 768px) {
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #members.list section {
+        grid-template-columns: 2fr 3fr 2fr 1fr;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+}
