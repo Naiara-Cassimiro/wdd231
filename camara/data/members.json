@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Tech Paulista",
+            "address": "Avenida Paulista, 1000 - São Paulo, SP",
+            "phone": "+55 11 3000-1000",
+            "website": "https://example.com",
+            "image": "tech-paulista.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Café Central SP",
+            "address": "Rua Augusta, 450 - São Paulo, SP",
+            "phone": "+55 11 3000-1001",
+            "website": "https://example.com",
+            "image": "cafe-central.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Construtora Horizonte",
+            "address": "Rua Vergueiro, 820 - São Paulo, SP",
+            "phone": "+55 11 3000-1002",
+            "website": "https://example.com",
+            "image": "construtora-horizonte.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Studio Criativo",
+            "address": "Rua da Consolação, 700 - São Paulo, SP",
+            "phone": "+55 11 3000-1003",
+            "website": "https://example.com",
+            "image": "studio-criativo.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Mercado Paulista",
+            "address": "Rua Pamplona, 320 - São Paulo, SP",
+            "phone": "+55 11 3000-1004",
+            "website": "https://example.com",
+            "image": "mercado-paulista.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Verde Urbano",
+            "address": "Rua Bela Cintra, 910 - São Paulo, SP",
+            "phone": "+55 11 3000-1005",
+            "website": "https://example.com",
+            "image": "verde-urbano.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Move SP",
+            "address": "Rua Haddock Lobo, 250 - São Paulo, SP",
+            "phone": "+55 11 3000-1006",
+            "website": "https://example.com",
+            "image": "move-sp.webp",
+            "membershipLevel": 2
+        }
+    ]
+}

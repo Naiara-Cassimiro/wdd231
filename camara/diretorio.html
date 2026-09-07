@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diretório | Câmara de Comércio</title>
+
+    <meta name="description"
+        content="Diretório de empresas da Câmara de Comércio, apresentando empresas e serviços da comunidade.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Diretório | Câmara de Comércio">
+    <meta property="og:description" content="Conheça as empresas e serviços que fazem parte da nossa comunidade.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <span class="brand-name">Câmara de Comércio</span>
+            <span class="brand-city">São Paulo</span>
+        </div>
+
+        <button id="menu" aria-label="Abrir menu de navegação"></button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html" class="active">Diretório</a></li>
+                <li><a href="join.html">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Diretório de Empresas</h1>
+
+        <div class="view-buttons">
+            <button id="grid" type="button">Grade</button>
+            <button id="list" type="button">Lista</button>
+        </div>
+
+        <div id="members" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+            <p>São Paulo, SP - Brasil</p>
+            <p>contato@camarasaopaulo.com.br</p>
+            <p>+55 (11) 0000-0000</p>
+        </div>
+
+        <div class="developer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Naiara Cassimiro</p>
+            <p>&copy; <span id="currentyear"></span> Câmara de Comércio de São Paulo</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
