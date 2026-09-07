@@ -28,6 +28,16 @@ function displayMembers(members) {
         const phone = document.createElement("p");
         phone.textContent = member.phone;
 
+        const membership = document.createElement("p");
+
+        if (member.membershipLevel === 3) {
+            membership.textContent = "Membro Ouro";
+        } else if (member.membershipLevel === 2) {
+            membership.textContent = "Membro Prata";
+        } else {
+            membership.textContent = "Membro";
+        }
+
         const website = document.createElement("a");
         website.href = member.website;
         website.textContent = "Visitar site";
