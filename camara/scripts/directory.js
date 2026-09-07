@@ -12,20 +12,22 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-    members.forEach((member) => {
+    members.forEach((member, index) => {
         const card = document.createElement("section");
 
+        const image = document.createElement("img");
         image.src = `imagens/${member.image}`;
         image.alt = `Logotipo da empresa ${member.name}`;
         image.width = 300;
         image.height = 200;
 
-        if (member === members[0]) {
+        if (index === 0) {
             image.loading = "eager";
             image.fetchPriority = "high";
         } else {
             image.loading = "lazy";
         }
+
         const name = document.createElement("h2");
         name.textContent = member.name;
 
