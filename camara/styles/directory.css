@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background-color: #243b53;
+    color: white;
+    padding: 1rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.brand-city {
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-buttons button {
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+}
+
+#members {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#members section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#members img {
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: contain;
+}
+
+#members a {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #243b53;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}

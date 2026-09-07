@@ -1,5 +1,7 @@
 const url = "data/members.json";
 const membersContainer = document.querySelector("#members");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
 
 async function getMembers() {
     const response = await fetch(url);
@@ -43,3 +45,13 @@ function displayMembers(members) {
 }
 
 getMembers();
+
+gridButton.addEventListener("click", () => {
+    membersContainer.classList.add("grid");
+    membersContainer.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    membersContainer.classList.add("list");
+    membersContainer.classList.remove("grid");
+});
