@@ -6,7 +6,8 @@
             "phone": "+55 11 3000-1000",
             "website": "https://example.com",
             "image": "tech-paulista.webp",
-            "membershipLevel": 3
+            "membershipLevel": 3,
+            "description": "Soluções em tecnologia e inovação para empresas."
         },
         {
             "name": "Confeitaria Sabor e Arte",
@@ -14,15 +15,17 @@
             "phone": "+55 11 3000-1001",
             "website": "https://example.com",
             "image": "confeitaria-sabor-e-arte.webp",
-            "membershipLevel": 2
-        },
+            "membershipLevel": 2,
+            "description": "Doces, bolos e produtos artesanais para momentos especiais."
+        }
         {
             "name": "Construtora Horizonte",
             "address": "Rua Vergueiro, 820 - São Paulo, SP",
             "phone": "+55 11 3000-1002",
             "website": "https://example.com",
             "image": "construtora-horizonte.webp",
-            "membershipLevel": 1
+            "membershipLevel": 1,
+            "description": "Construção e desenvolvimento de projetos residenciais e comerciais."
         },
         {
             "name": "Studio Criativo",
@@ -30,7 +33,8 @@
             "phone": "+55 11 3000-1003",
             "website": "https://example.com",
             "image": "studio-criativo.webp",
-            "membershipLevel": 2
+            "membershipLevel": 2,
+            "description": "Design, comunicação visual e soluções criativas para marcas."
         },
         {
             "name": "Mercado Paulista",
@@ -38,7 +42,8 @@
             "phone": "+55 11 3000-1004",
             "website": "https://example.com",
             "image": "mercado-paulista.webp",
-            "membershipLevel": 1
+            "membershipLevel": 1,
+            "description": "Produtos de qualidade e variedade para o dia a dia."
         },
         {
             "name": "Verde Urbano",
@@ -46,7 +51,8 @@
             "phone": "+55 11 3000-1005",
             "website": "https://example.com",
             "image": "verde-urbano.webp",
-            "membershipLevel": 3
+            "membershipLevel": 3,
+            "description": "Soluções sustentáveis para uma cidade mais verde."
         },
         {
             "name": "Move SP",
@@ -54,7 +60,8 @@
             "phone": "+55 11 3000-1006",
             "website": "https://example.com",
             "image": "move-sp.webp",
-            "membershipLevel": 2
+            "membershipLevel": 2,
+            "description": "Serviços voltados ao movimento, bem-estar e qualidade de vida."
         }
     ]
 }
