@@ -1,5 +1,6 @@
 const url = "data/members.json";
 const membersContainer = document.querySelector("#members");
+
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
@@ -48,6 +49,7 @@ function displayMembers(members) {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(membership);
         card.appendChild(website);
 
         membersContainer.appendChild(card);
