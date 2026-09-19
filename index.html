@@ -2,93 +2,146 @@
 <html lang="pt-BR">
 
 <head>
-    <meta property="og:title" content="Página Inicial WDD 231 | Naiara Cassimiro">
-    <meta property="og:description"
-        content="Página inicial do curso WDD 231 com projetos, atividades e progresso em desenvolvimento web.">
-    <meta property="og:image" content="https://naiara-cassimiro.github.io/wdd231/imagens/sao-paulo.webp">
-    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WDD 231 | Naiara Cassimiro</title>
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <title>Câmara de Comércio de São Paulo</title>
+
+    <meta name="description"
+        content="Página inicial da Câmara de Comércio de São Paulo com informações sobre empresas, eventos, clima e oportunidades para a comunidade.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/home.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Câmara de Comércio de São Paulo">
+    <meta property="og:description"
+        content="Conheça empresas, eventos e oportunidades da Câmara de Comércio de São Paulo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://naiara-cassimiro.github.io/wdd231/camara/imagens/chamber-social.webp">
+    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/camara/index.html">
+
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/home.js" type="module"></script>
 </head>
 
 <body>
+
     <header>
-        <img src="images/logo.svg" alt="Logotipo Naiara Cassimiro" width="1" height="1">
-        <span>Naiara Cassimiro</span>
-        <button id="botao-de-nav" class="hamburger" aria-label="navegação"></button>
-    </header>
-    <nav id="animateme">
-        <ul class="menu-links">
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Final</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Home</h1>
+        <div class="brand">
+            <span class="brand-name">Câmara de Comércio</span>
+            <span class="brand-city">São Paulo</span>
+        </div>
 
-        <section>
-            <h2>Course Work</h2>
+        <button id="menu" aria-label="Abrir menu de navegação"></button>
+
+        <nav id="navigation">
             <ul>
-                <li>HTML and CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="join.html">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
             </ul>
-        </section>
+        </nav>
+    </header>
 
-        <section>
-            <h2>São Paulo, Brasil</h2>
+    <main>
 
-            <figure>
-                <img src="images/sao-paulo.webp" alt="Vista da cidade de São Paulo">
-                <figcaption>São Paulo</figcaption>
-            </figure>
-        </section>
+        <section class="hero">
+            <img src="imagens/chamber-social.webp" alt="Câmara de Comércio de São Paulo">
 
-        <section>
-            <h2>Certificado de Programação Web e Computação</h2>
-
-            <div class="course-buttons">
-                <button id="all" type="button">Todos os Cursos</button>
-                <button id="wdd" type="button">Cursos WDD</button>
-                <button id="cse" type="button">Cursos CSE</button>
+            <div class="hero-content">
+                <h1>Câmara de Comércio de São Paulo</h1>
+                <a href="join.html" class="cta-button">Associe-se à Câmara</a>
             </div>
-
-            <div id="course-list"></div>
-            <p>Total de créditos: <span id="total-credits"></span></p>
         </section>
+
+        <section class="home-content">
+
+            <section class="events">
+                <h2>Eventos</h2>
+
+                <article>
+                    <h3>Encontro de Empreendedores</h3>
+                    <p>
+                        Empresários e profissionais da região se encontram para
+                        compartilhar experiências, criar conexões e fortalecer
+                        os negócios locais.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Feira de Negócios de São Paulo</h3>
+                    <p>
+                        Uma oportunidade para conhecer empresas, produtos,
+                        serviços e novas oportunidades de parceria.
+                    </p>
+                </article>
+            </section>
+
+            <section class="weather">
+                <h2>Clima em São Paulo</h2>
+
+                <div class="current-weather">
+                    <img id="weather-icon" src="imagens/weather-placeholder.svg" alt="Ícone das condições climáticas">
+
+                    <div>
+                        <p>
+                            <strong>
+                                <span id="current-temp">--</span>°C
+                            </strong>
+                        </p>
+                        <p id="weather-description">Carregando clima...</p>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h3>Previsão</h3>
+                    <div id="forecast-container"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="spotlights">
+            <h2>Empresas em Destaque</h2>
+            <div id="spotlight-container"></div>
+        </section>
+
     </main>
+
     <footer>
-        <p>&copy; <span id="currentyear"></span> Naiara Cassimiro</p>
-        <p>Brasil</p>
-        <p>WDD 231</p>
-        <p id="lastModified"></p>
+        <div class="contact-info">
+            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+            <p>São Paulo, SP - Brasil</p>
+            <p>contato@camarasaopaulo.com.br</p>
+            <p>+55 (11) 0000-0000</p>
+        </div>
 
-        <div class="social">
-            <a href="https://github.com/Naiara-Cassimiro" target="_blank" rel="noopener">
-                <img src="images/github.svg" alt="GitHub" width="16" height="16">
-            </a>
-
-            <a href="https://www.linkedin.com/in/naiara-cassimiro-6a62a3247/" target="_blank" rel="noopener">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
-            </a>
-
-            <a href="https://www.instagram.com/nany_ccassimiro/" target="_blank" rel="noopener">
-                <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
-            </a>
+        <div class="developer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Naiara Cassimiro</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+                Câmara de Comércio de São Paulo
+            </p>
+            <p id="lastModified"></p>
         </div>
     </footer>
+
 </body>
 
 </html>
