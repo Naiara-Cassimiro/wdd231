@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diretório | Câmara de Comércio de São Paulo</title>
+    <title>Câmara de Comércio de São Paulo</title>
 
     <meta name="description"
-        content="Diretório de empresas da Câmara de Comércio de São Paulo, apresentando empresas e serviços da comunidade.">
+        content="Página inicial da Câmara de Comércio de São Paulo com informações sobre empresas, eventos, clima e oportunidades para a comunidade.">
 
     <meta name="author" content="Naiara Cassimiro">
 
@@ -21,24 +21,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="estilos/directory.css">
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/home.css">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Diretório | Câmara de Comércio de São Paulo">
-
-    <meta property="og:description" content="Conheça as empresas e serviços que fazem parte da nossa comunidade.">
-
+    <meta property="og:title" content="Câmara de Comércio de São Paulo">
+    <meta property="og:description"
+        content="Conheça empresas, eventos e oportunidades da Câmara de Comércio de São Paulo.">
     <meta property="og:type" content="website">
-
     <meta property="og:image" content="https://naiara-cassimiro.github.io/wdd231/camara/imagens/chamber-social.webp">
-
-    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/camara/index.html">
 
     <!-- JavaScript -->
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" type="module"></script>
 </head>
 
 <body>
@@ -53,39 +50,147 @@
 
         <nav id="navigation">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="diretorio.html" class="active">Diretório</a></li>
-                <li><a href="join.html">Associe-se</a></li>
-                <li><a href="discover.html">Descubra</a></li>
+                <li>
+                    <a href="index.html" class="active">Início</a>
+                </li>
+                <li>
+                    <a href="diretorio.html">Diretório</a>
+                </li>
+                <li>
+                    <a href="join.html">Associe-se</a>
+                </li>
+                <li>
+                    <a href="discover.html">Descubra</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Diretório de Empresas</h1>
 
-        <div class="view-buttons">
-            <button id="grid" type="button">Grade</button>
-            <button id="list" type="button">Lista</button>
-        </div>
+        <!-- HERO -->
+        <section class="hero">
 
-        <div id="members" class="grid"></div>
+            <img src="imagens/chamber-social.webp" alt="Câmara de Comércio de São Paulo">
+
+            <div class="hero-content">
+                <h1>Câmara de Comércio de São Paulo</h1>
+
+                <a href="join.html" class="cta-button">
+                    Associe-se à Câmara
+                </a>
+            </div>
+
+        </section>
+
+        <!-- EVENTOS E CLIMA -->
+        <section class="home-content">
+
+            <!-- EVENTOS -->
+            <section class="events">
+
+                <h2>Eventos</h2>
+
+                <article>
+                    <h3>Encontro de Empreendedores</h3>
+
+                    <p>
+                        Empresários e profissionais da região se encontram
+                        para compartilhar experiências, criar conexões e
+                        fortalecer os negócios locais.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Feira de Negócios de São Paulo</h3>
+
+                    <p>
+                        Uma oportunidade para conhecer empresas, produtos,
+                        serviços e novas oportunidades de parceria.
+                    </p>
+                </article>
+
+            </section>
+
+            <!-- CLIMA -->
+            <section class="weather">
+
+                <h2>Clima em São Paulo</h2>
+
+                <div class="current-weather">
+
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png"
+                        alt="Ícone das condições climáticas" width="70" height="70">
+
+                    <div>
+                        <p>
+                            <strong>
+                                <span id="current-temp">--</span>°C
+                            </strong>
+                        </p>
+
+                        <p id="weather-description">
+                            Carregando clima...
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="forecast">
+
+                    <h3>Previsão</h3>
+
+                    <div id="forecast-container">
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- EMPRESAS EM DESTAQUE -->
+        <section class="spotlights">
+
+            <h2>Empresas em Destaque</h2>
+
+            <div id="spotlight-container">
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
+
         <div class="contact-info">
-            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+            <p>
+                <strong>Câmara de Comércio de São Paulo</strong>
+            </p>
+
             <p>São Paulo, SP - Brasil</p>
+
             <p>contato@camarasaopaulo.com.br</p>
+
             <p>+55 (11) 0000-0000</p>
         </div>
 
         <div class="developer-info">
+
             <p>WDD 231 Class Project</p>
+
             <p>Naiara Cassimiro</p>
-            <p>&copy; <span id="currentyear"></span> Câmara de Comércio de São Paulo</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Câmara de Comércio de São Paulo
+            </p>
+
             <p id="lastModified"></p>
+
         </div>
+
     </footer>
 
 </body>
