@@ -50,53 +50,77 @@
 
         <nav id="navigation">
             <ul>
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="diretorio.html">Diretório</a></li>
-                <li><a href="join.html">Associe-se</a></li>
-                <li><a href="discover.html">Descubra</a></li>
+                <li>
+                    <a href="index.html" class="active">Início</a>
+                </li>
+                <li>
+                    <a href="diretorio.html">Diretório</a>
+                </li>
+                <li>
+                    <a href="join.html">Associe-se</a>
+                </li>
+                <li>
+                    <a href="discover.html">Descubra</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
 
+        <!-- HERO -->
         <section class="hero">
+
             <img src="imagens/chamber-social.webp" alt="Câmara de Comércio de São Paulo">
 
             <div class="hero-content">
                 <h1>Câmara de Comércio de São Paulo</h1>
-                <a href="join.html" class="cta-button">Associe-se à Câmara</a>
+
+                <a href="join.html" class="cta-button">
+                    Associe-se à Câmara
+                </a>
             </div>
+
         </section>
 
+        <!-- EVENTOS E CLIMA -->
         <section class="home-content">
 
+            <!-- EVENTOS -->
             <section class="events">
+
                 <h2>Eventos</h2>
 
                 <article>
                     <h3>Encontro de Empreendedores</h3>
+
                     <p>
-                        Empresários e profissionais da região se encontram para
-                        compartilhar experiências, criar conexões e fortalecer
-                        os negócios locais.
+                        Empresários e profissionais da região se encontram
+                        para compartilhar experiências, criar conexões e
+                        fortalecer os negócios locais.
                     </p>
                 </article>
 
                 <article>
                     <h3>Feira de Negócios de São Paulo</h3>
+
                     <p>
                         Uma oportunidade para conhecer empresas, produtos,
                         serviços e novas oportunidades de parceria.
                     </p>
                 </article>
+
             </section>
 
+            <!-- CLIMA -->
             <section class="weather">
+
                 <h2>Clima em São Paulo</h2>
 
                 <div class="current-weather">
-                    <img id="weather-icon" src="imagens/weather-placeholder.svg" alt="Ícone das condições climáticas">
+
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png"
+                        alt="Ícone das condições climáticas" width="70" height="70">
 
                     <div>
                         <p>
@@ -104,42 +128,69 @@
                                 <span id="current-temp">--</span>°C
                             </strong>
                         </p>
-                        <p id="weather-description">Carregando clima...</p>
+
+                        <p id="weather-description">
+                            Carregando clima...
+                        </p>
                     </div>
+
                 </div>
 
                 <div class="forecast">
+
                     <h3>Previsão</h3>
-                    <div id="forecast-container"></div>
+
+                    <div id="forecast-container">
+                    </div>
+
                 </div>
+
             </section>
 
         </section>
 
+        <!-- EMPRESAS EM DESTAQUE -->
         <section class="spotlights">
+
             <h2>Empresas em Destaque</h2>
-            <div id="spotlight-container"></div>
+
+            <div id="spotlight-container">
+            </div>
+
         </section>
 
     </main>
 
     <footer>
+
         <div class="contact-info">
-            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+            <p>
+                <strong>Câmara de Comércio de São Paulo</strong>
+            </p>
+
             <p>São Paulo, SP - Brasil</p>
+
             <p>contato@camarasaopaulo.com.br</p>
+
             <p>+55 (11) 0000-0000</p>
         </div>
 
         <div class="developer-info">
+
             <p>WDD 231 Class Project</p>
+
             <p>Naiara Cassimiro</p>
+
             <p>
-                &copy; <span id="currentyear"></span>
+                &copy;
+                <span id="currentyear"></span>
                 Câmara de Comércio de São Paulo
             </p>
+
             <p id="lastModified"></p>
+
         </div>
+
     </footer>
 
 </body>
