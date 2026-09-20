@@ -8,7 +8,7 @@
     <title>Diretório | Câmara de Comércio de São Paulo</title>
 
     <meta name="description"
-        content="Diretório de empresas da Câmara de Comércio de São Paulo, apresentando empresas e serviços da comunidade.">
+        content="Diretório de empresas da Câmara de Comércio de São Paulo com informações sobre empresas, serviços e membros da comunidade.">
 
     <meta name="author" content="Naiara Cassimiro">
 
@@ -21,13 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../estilos/normalize.css">
     <link rel="stylesheet" href="estilos/directory.css">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Diretório | Câmara de Comércio de São Paulo">
+    <meta property="og:title" content="Diretório da Câmara de Comércio de São Paulo">
 
-    <meta property="og:description" content="Conheça as empresas e serviços que fazem parte da nossa comunidade.">
+    <meta property="og:description"
+        content="Conheça as empresas e serviços que fazem parte da Câmara de Comércio de São Paulo.">
 
     <meta property="og:type" content="website">
 
@@ -49,14 +50,28 @@
             <span class="brand-city">São Paulo</span>
         </div>
 
-        <button id="menu" aria-label="Abrir menu de navegação"></button>
+        <button id="menu" type="button" aria-label="Abrir menu de navegação">
+        </button>
 
-        <nav id="navigation">
+        <nav id="navigation" aria-label="Navegação principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="diretorio.html" class="active">Diretório</a></li>
-                <li><a href="join.html">Associe-se</a></li>
-                <li><a href="discover.html">Descubra</a></li>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="diretorio.html" class="active" aria-current="page">
+                        Diretório
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">Associe-se</a>
+                </li>
+
+                <li>
+                    <a href="discover.html">Descubra</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -65,8 +80,13 @@
         <h1>Diretório de Empresas</h1>
 
         <div class="view-buttons">
-            <button id="grid" type="button">Grade</button>
-            <button id="list" type="button">Lista</button>
+            <button id="grid" class="selected" type="button" aria-label="Exibir empresas em grade">
+                Grade
+            </button>
+
+            <button id="list" type="button" aria-label="Exibir empresas em lista">
+                Lista
+            </button>
         </div>
 
         <div id="members" class="grid"></div>
@@ -74,7 +94,10 @@
 
     <footer>
         <div class="contact-info">
-            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+            <p>
+                <strong>Câmara de Comércio de São Paulo</strong>
+            </p>
+
             <p>São Paulo, SP - Brasil</p>
             <p>contato@camarasaopaulo.com.br</p>
             <p>+55 (11) 0000-0000</p>
@@ -82,8 +105,15 @@
 
         <div class="developer-info">
             <p>WDD 231 Class Project</p>
+
             <p>Naiara Cassimiro</p>
-            <p>&copy; <span id="currentyear"></span> Câmara de Comércio de São Paulo</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Câmara de Comércio de São Paulo
+            </p>
+
             <p id="lastModified"></p>
         </div>
     </footer>

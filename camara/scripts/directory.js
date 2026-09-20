@@ -1,17 +1,29 @@
 const url = "data/membros.json";
-const membersContainer = document.querySelector("#members");
 
+const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
+    try {
+        const response = await fetch(url);
 
-    displayMembers(data.members);
+        if (!response.ok) {
+            throw new Error("Não foi possível carregar os membros.");
+        }
+
+        const data = await response.json();
+        displayMembers(data.members);
+    } catch (error) {
+        console.error("Erro ao carregar os membros:", error);
+        membersContainer.textContent =
+            "Não foi possível carregar o diretório de empresas.";
+    }
 }
 
 function displayMembers(members) {
+    membersContainer.innerHTML = "";
+
     members.forEach((member, index) => {
         const card = document.createElement("section");
 
@@ -64,14 +76,20 @@ function displayMembers(members) {
     });
 }
 
-getMembers();
-
 gridButton.addEventListener("click", () => {
     membersContainer.classList.add("grid");
     membersContainer.classList.remove("list");
+
+    gridButton.classList.add("selected");
+    listButton.classList.remove("selected");
 });
 
 listButton.addEventListener("click", () => {
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
+
+    listButton.classList.add("selected");
+    gridButton.classList.remove("selected");
 });
+
+getMembers();

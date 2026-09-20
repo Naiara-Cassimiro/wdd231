@@ -1,0 +1,13 @@
+A	camara/estilos/home.css
+A	camara/index.html
+A	camara/scripts/home.js
+R100	styles/larger.css	estilos/larger.css
+R100	styles/normalize.css	estilos/normalize.css
+R100	styles/small.css	estilos/small.css
+R100	images/favicon.svg	imagens/favicon.svg
+R100	images/github.svg	imagens/github.svg
+R100	images/instagram.svg	imagens/instagram.svg
+R100	images/linkedin.svg	imagens/linkedin.svg
+R100	images/logo.svg	imagens/logo.svg
+R100	images/sao-paulo.webp	imagens/sao-paulo.webp
+M	index.html
