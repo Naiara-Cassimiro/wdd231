@@ -9,7 +9,9 @@ body {
     color: #222;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
     background-color: #243b53;
@@ -66,23 +68,29 @@ header {
     color: white;
     text-decoration: none;
     padding: 0.75rem;
+    border-radius: 4px;
 }
 
 /* Wayfinding */
+
 #navigation a.active {
     background-color: white;
     color: #243b53;
     font-weight: 700;
 }
 
-/* MAIN */
+/* =========================
+   MAIN
+========================= */
 
 main {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     position: relative;
@@ -95,17 +103,19 @@ main {
     object-fit: cover;
 }
 
+/* Sobreposição usada apenas para posicionar o botão */
+
 .hero-content {
     position: absolute;
     inset: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.35);
 }
+
+/* Mantém o H1 acessível sem duplicar visualmente
+   o título que já aparece na imagem */
 
 .hero-content h1 {
     position: absolute;
@@ -133,7 +143,9 @@ main {
     background-color: #e8edf2;
 }
 
-/* EVENTOS E CLIMA */
+/* =========================
+   EVENTOS E CLIMA
+========================= */
 
 .home-content {
     display: grid;
@@ -186,7 +198,9 @@ main {
     gap: 0.5rem;
 }
 
-/* EMPRESAS EM DESTAQUE */
+/* =========================
+   EMPRESAS EM DESTAQUE
+========================= */
 
 .spotlights {
     margin: 0 1rem 1rem;
@@ -218,7 +232,9 @@ main {
     color: #174d7c;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background-color: #243b53;
@@ -231,7 +247,9 @@ footer p {
     margin: 0.4rem 0;
 }
 
-/* DESKTOP */
+/* =========================
+   DESKTOP
+========================= */
 
 @media screen and (min-width: 768px) {
 
@@ -257,10 +275,6 @@ footer p {
 
     .hero>img {
         height: 450px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.6rem;
     }
 
     .home-content {
