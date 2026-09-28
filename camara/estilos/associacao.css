@@ -1,0 +1,255 @@
+/* ==============================
+   PÁGINA ASSOCIE-SE
+============================== */
+
+.associacao-principal {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+.associacao-principal>h1 {
+    margin-bottom: 2rem;
+    color: #243b53;
+    text-align: center;
+}
+
+.associacao-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+
+/* ==============================
+   FORMULÁRIO
+============================== */
+
+.secao-formulario,
+.secao-niveis {
+    min-width: 0;
+}
+
+.secao-formulario h2,
+.secao-niveis h2 {
+    margin-top: 0;
+    color: #243b53;
+}
+
+.secao-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #f4f7f9;
+    border: 1px solid #c7d2dc;
+    border-radius: 10px;
+}
+
+.secao-formulario label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: #243b53;
+    font-weight: 500;
+}
+
+.secao-formulario input,
+.secao-formulario select,
+.secao-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    color: #1f2933;
+    background-color: #ffffff;
+    border: 1px solid #657786;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.secao-formulario textarea {
+    resize: vertical;
+}
+
+.secao-formulario input:focus,
+.secao-formulario select:focus,
+.secao-formulario textarea:focus {
+    border-color: #243b53;
+    outline: 3px solid #9fc5e8;
+    outline-offset: 2px;
+}
+
+.secao-formulario button[type="submit"] {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.85rem 1rem;
+    color: #ffffff;
+    background-color: #243b53;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.secao-formulario button[type="submit"]:hover,
+.secao-formulario button[type="submit"]:focus-visible {
+    background-color: #172a3a;
+}
+
+
+/* ==============================
+   CARTÕES DE ASSOCIAÇÃO
+============================== */
+
+.cartoes-associacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cartao-associacao {
+    padding: 1.4rem;
+    text-align: center;
+    background-color: #f4f7f9;
+    border: 1px solid #c7d2dc;
+    border-radius: 10px;
+
+    /* Animação inicial exigida pela atividade */
+    opacity: 0;
+    transform: translateY(24px);
+    animation: entrada-cartao 0.7s ease-out forwards;
+}
+
+.cartao-associacao:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.cartao-associacao:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.cartao-associacao:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.cartao-associacao:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.cartao-associacao h3 {
+    margin-top: 0;
+    color: #243b53;
+}
+
+.cartao-associacao p {
+    color: #36454f;
+    line-height: 1.5;
+}
+
+.cartao-associacao button {
+    padding: 0.65rem 1rem;
+    color: #243b53;
+    background-color: #ffffff;
+    border: 2px solid #243b53;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cartao-associacao button:hover,
+.cartao-associacao button:focus-visible {
+    color: #ffffff;
+    background-color: #243b53;
+}
+
+
+/* ==============================
+   ANIMAÇÃO DOS CARTÕES
+============================== */
+
+@keyframes entrada-cartao {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==============================
+   MODAIS
+============================== */
+
+dialog {
+    width: min(500px, 90%);
+    box-sizing: border-box;
+    padding: 0;
+    color: #1f2933;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 65%);
+}
+
+.conteudo-modal {
+    padding: 1.5rem;
+}
+
+.conteudo-modal h2 {
+    margin-top: 0;
+    color: #243b53;
+}
+
+.conteudo-modal ul {
+    padding-left: 1.4rem;
+    line-height: 1.7;
+}
+
+.fechar-modal {
+    padding: 0.65rem 1rem;
+    color: #ffffff;
+    background-color: #243b53;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus-visible {
+    background-color: #172a3a;
+}
+
+
+/* ==============================
+   ACESSIBILIDADE
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .cartao-associacao {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}
+
+
+/* ==============================
+   TELAS MAIORES
+============================== */
+
+@media screen and (min-width: 800px) {
+    .associacao-layout {
+        grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+        align-items: start;
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,101 @@
+/* ==============================
+   PÁGINA DE AGRADECIMENTO
+============================== */
+
+.agradecimento-principal {
+    width: min(800px, 92%);
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.confirmacao {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f7f9;
+    border: 1px solid #c7d2dc;
+    border-radius: 10px;
+}
+
+.confirmacao h1 {
+    margin-top: 0;
+    color: #243b53;
+}
+
+.mensagem-confirmacao {
+    color: #36454f;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   DADOS ENVIADOS
+============================== */
+
+.dados-enviados {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #c7d2dc;
+    border-radius: 8px;
+}
+
+.dados-enviados h2 {
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+    color: #243b53;
+    text-align: center;
+    border-bottom: 1px solid #c7d2dc;
+}
+
+.dados-enviados p {
+    margin: 1rem 0;
+    color: #1f2933;
+    line-height: 1.5;
+}
+
+.dados-enviados strong {
+    color: #243b53;
+}
+
+
+/* ==============================
+   BOTÃO VOLTAR
+============================== */
+
+.botao-inicio {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    color: #ffffff;
+    background-color: #243b53;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.botao-inicio:hover,
+.botao-inicio:focus-visible {
+    background-color: #172a3a;
+}
+
+
+/* ==============================
+   TELAS PEQUENAS
+============================== */
+
+@media screen and (max-width: 500px) {
+    .agradecimento-principal {
+        width: 94%;
+        padding: 1.5rem 0;
+    }
+
+    .confirmacao {
+        padding: 1.25rem;
+    }
+
+    .dados-enviados {
+        padding: 1rem;
+    }
+}

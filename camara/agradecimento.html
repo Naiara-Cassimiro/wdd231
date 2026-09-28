@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Obrigado | Câmara de Comércio de São Paulo</title>
+
+    <meta name="description" content="Confirmação do pedido de associação à Câmara de Comércio de São Paulo.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/agradecimento.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/agradecimento.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="brand">
+            <span class="brand-name">Câmara de Comércio</span>
+            <span class="brand-city">São Paulo</span>
+        </div>
+
+        <button id="menu" aria-label="Abrir menu de navegação"></button>
+
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="diretorio.html">Diretório</a>
+                </li>
+
+                <li>
+                    <a href="associacao.html" class="active">
+                        Associe-se
+                    </a>
+                </li>
+
+                <li>
+                    <a href="discover.html">Descubra</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="agradecimento-principal">
+
+        <section class="confirmacao">
+
+            <h1>Obrigado por se associar!</h1>
+
+            <p class="mensagem-confirmacao">
+                Recebemos seu pedido de associação à Câmara de Comércio
+                de São Paulo.
+            </p>
+
+            <p>
+                Confira abaixo as informações enviadas:
+            </p>
+
+            <div class="dados-enviados">
+
+                <h2>Dados do Pedido</h2>
+
+                <p>
+                    <strong>Nome:</strong>
+                    <span id="nome-enviado"></span>
+                </p>
+
+                <p>
+                    <strong>Sobrenome:</strong>
+                    <span id="sobrenome-enviado"></span>
+                </p>
+
+                <p>
+                    <strong>E-mail:</strong>
+                    <span id="email-enviado"></span>
+                </p>
+
+                <p>
+                    <strong>Número de celular:</strong>
+                    <span id="telefone-enviado"></span>
+                </p>
+
+                <p>
+                    <strong>Empresa ou organização:</strong>
+                    <span id="organizacao-enviada"></span>
+                </p>
+
+                <p>
+                    <strong>Data e hora do pedido:</strong>
+                    <span id="data-hora-enviada"></span>
+                </p>
+
+            </div>
+
+            <a href="index.html" class="botao-inicio">
+                Voltar para a página inicial
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+
+            <p>
+                <strong>Câmara de Comércio de São Paulo</strong>
+            </p>
+
+            <p>São Paulo, SP - Brasil</p>
+
+            <p>contato@camarasaopaulo.com.br</p>
+
+            <p>+55 (11) 0000-0000</p>
+
+        </div>
+
+        <div class="developer-info">
+
+            <p>WDD 231 Class Project</p>
+
+            <p>Naiara Cassimiro</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Câmara de Comércio de São Paulo
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
