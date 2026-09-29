@@ -71,6 +71,45 @@
     resize: vertical;
 }
 
+
+/* ==============================
+   NÍVEL DE ASSOCIAÇÃO
+============================== */
+
+.nivel-associacao {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #c7d2dc;
+    border-radius: 6px;
+}
+
+.nivel-associacao legend {
+    padding: 0 0.4rem;
+    color: #243b53;
+    font-weight: 500;
+}
+
+.nivel-associacao label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.6rem 0;
+    color: #243b53;
+    font-weight: 400;
+}
+
+.nivel-associacao input[type="radio"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==============================
+   FOCO DOS CAMPOS
+============================== */
+
 .secao-formulario input:focus,
 .secao-formulario select:focus,
 .secao-formulario textarea:focus {

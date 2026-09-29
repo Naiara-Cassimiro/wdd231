@@ -118,16 +118,29 @@
                             autocomplete="organization" required>
                     </label>
 
-                    <label>
-                        Nível de associação
-                        <select name="membership" title="Selecione um nível de associação" required>
-                            <option value="">Selecione um nível</option>
-                            <option value="np">Associação NP</option>
-                            <option value="bronze">Associação Bronze</option>
-                            <option value="silver">Associação Prata</option>
-                            <option value="gold">Associação Ouro</option>
-                        </select>
-                    </label>
+                    <fieldset class="nivel-associacao">
+                        <legend>Nível de associação</legend>
+
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            Associação NP
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Associação Bronze
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            Associação Prata
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            Associação Ouro
+                        </label>
+                    </fieldset>
 
                     <label>
                         Descrição da atividade ou organização
