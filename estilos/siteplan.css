@@ -1,0 +1,113 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #263238;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header {
+    padding: 2rem 1rem;
+    color: #ffffff;
+    background-color: #1f5f6b;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+
+/* ==============================
+   CONTEÚDO PRINCIPAL
+============================== */
+
+main {
+    width: min(900px, 92%);
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f4ebdd;
+    border-radius: 8px;
+}
+
+h2,
+h3 {
+    color: #1f5f6b;
+}
+
+h2 {
+    margin-top: 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #1f5f6b;
+}
+
+p,
+li {
+    font-size: 1rem;
+}
+
+li {
+    margin-bottom: 0.6rem;
+}
+
+
+/* ==============================
+   WIREFRAMES
+============================== */
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto 2rem;
+    background-color: #ffffff;
+    border: 1px solid #263238;
+    border-radius: 4px;
+}
+
+section img[src*="wireframe_mobile"] {
+    width: min(375px, 100%);
+}
+
+section img[src*="wireframe_desktop"] {
+    width: 100%;
+}
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer {
+    padding: 1.5rem 1rem;
+    color: #ffffff;
+    background-color: #1f5f6b;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
