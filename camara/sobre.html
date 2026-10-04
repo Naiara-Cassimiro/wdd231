@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descubra São Paulo | Câmara de Comércio</title>
+
+    <meta name="description"
+        content="Descubra locais de interesse, cultura, lazer e oportunidades em São Paulo com a Câmara de Comércio de São Paulo.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Descubra São Paulo | Câmara de Comércio">
+
+    <meta property="og:description" content="Conheça locais de interesse, cultura e lazer na cidade de São Paulo.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" content="https://naiara-cassimiro.github.io/wdd231/camara/imagens/chamber-social.webp">
+
+    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/camara/sobre.html">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/sobre.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="brand">
+            <span class="brand-name">Câmara de Comércio</span>
+            <span class="brand-city">São Paulo</span>
+        </div>
+
+        <button id="menu" aria-label="Abrir menu de navegação">
+        </button>
+
+        <nav id="navigation">
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="diretorio.html">
+                        Diretório
+                    </a>
+                </li>
+
+                <li>
+                    <a href="associacao.html">
+                        Associe-se
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre.html" class="active">
+                        Descubra
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Descubra São Paulo</h1>
+
+        <!-- Mensagem de visita -->
+        <aside id="visit-message" class="visit-message">
+        </aside>
+
+        <!-- Introdução -->
+        <section class="discover-intro">
+
+            <h2>Explore nossa cidade</h2>
+
+            <p>
+                Conheça alguns lugares de interesse de São Paulo.
+                Descubra espaços de cultura, lazer, história e
+                entretenimento que fazem parte da cidade.
+            </p>
+
+        </section>
+
+        <!-- Locais de interesse -->
+        <section class="discover">
+
+            <h2>Locais de Interesse</h2>
+
+            <div id="places-container" class="places-container">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+
+            <p>
+                <strong>
+                    Câmara de Comércio de São Paulo
+                </strong>
+            </p>
+
+            <p>São Paulo, SP - Brasil</p>
+
+            <p>contato@camarasaopaulo.com.br</p>
+
+            <p>+55 (11) 0000-0000</p>
+
+        </div>
+
+        <div class="developer-info">
+
+            <p>WDD 231 Class Project</p>
+
+            <p>Naiara Cassimiro</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Câmara de Comércio de São Paulo
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
