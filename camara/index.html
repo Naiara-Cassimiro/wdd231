@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Câmara de Comércio de São Paulo</title>
+    <title>Descubra São Paulo | Câmara de Comércio</title>
 
     <meta name="description"
-        content="Página inicial da Câmara de Comércio de São Paulo com informações sobre empresas, eventos, clima e oportunidades para a comunidade.">
+        content="Descubra locais de interesse, cultura, lazer e oportunidades em São Paulo com a Câmara de Comércio de São Paulo.">
 
     <meta name="author" content="Naiara Cassimiro">
 
@@ -22,20 +22,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../estilos/normalize.css">
-    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Câmara de Comércio de São Paulo">
-    <meta property="og:description"
-        content="Conheça empresas, eventos e oportunidades da Câmara de Comércio de São Paulo.">
+    <meta property="og:title" content="Descubra São Paulo | Câmara de Comércio">
+    <meta property="og:description" content="Conheça locais de interesse, cultura e lazer na cidade de São Paulo.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://naiara-cassimiro.github.io/wdd231/camara/imagens/chamber-social.webp">
-    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/camara/index.html">
+    <meta property="og:url" content="https://naiara-cassimiro.github.io/wdd231/camara/sobre.html">
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/home.js" type="module"></script>
+    <script src="scripts/sobre.js" type="module"></script>
 </head>
 
 <body>
@@ -51,7 +50,7 @@
         <nav id="navigation">
             <ul>
                 <li>
-                    <a href="index.html" class="active">Início</a>
+                    <a href="index.html">Início</a>
                 </li>
                 <li>
                     <a href="diretorio.html">Diretório</a>
@@ -60,7 +59,7 @@
                     <a href="associacao.html">Associe-se</a>
                 </li>
                 <li>
-                    <a href="discover.html">Descubra</a>
+                    <a href="sobre.html" class="active">Descubra</a>
                 </li>
             </ul>
         </nav>
@@ -68,95 +67,26 @@
 
     <main>
 
-        <!-- HERO -->
-        <section class="hero">
+        <h1>Descubra São Paulo</h1>
 
-            <img src="imagens/chamber-social.webp" alt="Câmara de Comércio de São Paulo">
+        <aside id="visit-message" class="visit-message">
+        </aside>
 
-            <div class="hero-content">
-                <h1>Câmara de Comércio de São Paulo</h1>
+        <section class="discover-intro">
+            <h2>Explore nossa cidade</h2>
 
-                <a href="associacao.html" class="cta-button">
-                    Associe-se à Câmara
-                </a>
-            </div>
-
+            <p>
+                Conheça alguns lugares de interesse de São Paulo.
+                Descubra espaços de cultura, lazer, história e
+                entretenimento que fazem parte da cidade.
+            </p>
         </section>
 
-        <!-- EVENTOS E CLIMA -->
-        <section class="home-content">
+        <section class="discover">
+            <h2>Locais de Interesse</h2>
 
-            <!-- EVENTOS -->
-            <section class="events">
-
-                <h2>Eventos</h2>
-
-                <article>
-                    <h3>Encontro de Empreendedores</h3>
-
-                    <p>
-                        Empresários e profissionais da região se encontram
-                        para compartilhar experiências, criar conexões e
-                        fortalecer os negócios locais.
-                    </p>
-                </article>
-
-                <article>
-                    <h3>Feira de Negócios de São Paulo</h3>
-
-                    <p>
-                        Uma oportunidade para conhecer empresas, produtos,
-                        serviços e novas oportunidades de parceria.
-                    </p>
-                </article>
-
-            </section>
-
-            <!-- CLIMA -->
-            <section class="weather">
-
-                <h2>Clima em São Paulo</h2>
-
-                <div class="current-weather">
-
-                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png"
-                        alt="Ícone das condições climáticas" width="70" height="70">
-
-                    <div>
-                        <p>
-                            <strong>
-                                <span id="current-temp">--</span>°C
-                            </strong>
-                        </p>
-
-                        <p id="weather-description">
-                            Carregando clima...
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="forecast">
-
-                    <h3>Previsão</h3>
-
-                    <div id="forecast-container">
-                    </div>
-
-                </div>
-
-            </section>
-
-        </section>
-
-        <!-- EMPRESAS EM DESTAQUE -->
-        <section class="spotlights">
-
-            <h2>Empresas em Destaque</h2>
-
-            <div id="spotlight-container">
+            <div id="places-container" class="places-container">
             </div>
-
         </section>
 
     </main>
