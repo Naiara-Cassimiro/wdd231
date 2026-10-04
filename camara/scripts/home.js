@@ -1,4 +1,4 @@
-const membersURL = "data/membros.json";
+const membersURL = "dados/membros.json";
 const spotlightContainer = document.querySelector("#spotlight-container");
 
 async function getSpotlightMembers() {
