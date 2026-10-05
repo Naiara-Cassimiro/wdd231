@@ -1,10 +1,25 @@
-import { locais } from "../dados/locais.mjs";
-
 /* =========================
    CARDS DOS LOCAIS
 ========================= */
 
 const placesContainer = document.querySelector("#places-container");
+const placesURL = "dados/locais.json";
+
+async function getPlaces() {
+    try {
+        const response = await fetch(placesURL);
+
+        if (!response.ok) {
+            throw new Error("Não foi possível carregar os locais.");
+        }
+
+        const places = await response.json();
+
+        displayPlaces(places);
+    } catch (error) {
+        console.error("Erro ao carregar os locais:", error);
+    }
+}
 
 function displayPlaces(places) {
     placesContainer.innerHTML = "";
@@ -51,7 +66,7 @@ function displayPlaces(places) {
     });
 }
 
-displayPlaces(locais);
+getPlaces();
 
 
 /* =========================
