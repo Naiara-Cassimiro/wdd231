@@ -24,7 +24,7 @@ async function getPlaces() {
 function displayPlaces(places) {
     placesContainer.innerHTML = "";
 
-    places.forEach((place) => {
+    places.forEach((place, index) => {
         const card = document.createElement("article");
         card.classList.add("place-card");
 
@@ -36,9 +36,19 @@ function displayPlaces(places) {
         const image = document.createElement("img");
         image.src = `imagens/${place.imagem}`;
         image.alt = `Vista de ${place.nome}`;
-        image.width = 300;
-        image.height = 200;
-        image.loading = "lazy";
+        image.width = 600;
+        image.height = 400;
+
+        /*
+         * A primeira imagem pode ser o elemento LCP.
+         * Por isso, ela recebe prioridade alta e não usa lazy loading.
+         * As demais imagens continuam usando carregamento lento.
+         */
+        if (index === 0) {
+            image.fetchPriority = "high";
+        } else {
+            image.loading = "lazy";
+        }
 
         figure.appendChild(image);
 
@@ -67,7 +77,6 @@ function displayPlaces(places) {
 }
 
 getPlaces();
-
 
 /* =========================
    MENSAGEM DE VISITA
