@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Mala | Mala Pronta</title>
+
+    <meta name="description"
+        content="Organize os itens essenciais para sua viagem com a lista interativa do Mala Pronta.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Minha Mala | Mala Pronta">
+    <meta property="og:description"
+        content="Confira itens essenciais e organize sua mala de viagem de forma simples e prática.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/mala-pronta.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html" aria-label="Mala Pronta - Página inicial">
+            Mala Pronta
+        </a>
+
+        <button id="menu" aria-label="Abrir menu de navegação"></button>
+
+        <nav id="navigation" aria-label="Navegação principal">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="mala.html" class="active">Minha Mala</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+            <div class="page-heading-content">
+                <p class="hero-label">PLANEJE SUA VIAGEM</p>
+
+                <h1>Minha Mala</h1>
+
+                <p>
+                    Confira sugestões de itens essenciais e organize
+                    o que você precisa levar para sua próxima viagem.
+                </p>
+            </div>
+        </section>
+
+        <section class="packing-section">
+
+            <div class="packing-header">
+                <div>
+                    <h2>Itens para sua viagem</h2>
+
+                    <p>
+                        Escolha um tipo de viagem para encontrar
+                        sugestões de itens para sua mala.
+                    </p>
+                </div>
+
+                <div class="filter-container">
+                    <label for="travel-filter">
+                        Tipo de viagem
+                    </label>
+
+                    <select id="travel-filter">
+                        <option value="todos">
+                            Todos
+                        </option>
+                        <option value="praia">
+                            Praia
+                        </option>
+                        <option value="campo">
+                            Campo
+                        </option>
+                        <option value="trabalho">
+                            Trabalho
+                        </option>
+                        <option value="ferias">
+                            Férias
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <!--
+                Os cards serão criados dinamicamente
+                pelo JavaScript a partir do JSON.
+            -->
+            <div id="items-container" class="items-container" aria-live="polite">
+            </div>
+
+        </section>
+
+        <section class="saved-items">
+            <div class="saved-items-content">
+                <h2>Minha lista</h2>
+
+                <p>
+                    Os itens adicionados à sua mala ficarão salvos
+                    neste navegador para facilitar sua organização.
+                </p>
+
+                <p>
+                    Itens selecionados:
+                    <strong id="saved-count">0</strong>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal de detalhes -->
+    <dialog id="item-dialog">
+
+        <button id="close-dialog" type="button" aria-label="Fechar detalhes">
+            &times;
+        </button>
+
+        <div id="dialog-content"></div>
+
+    </dialog>
+
+    <footer>
+        <div class="footer-content">
+
+            <p>
+                <strong>Mala Pronta</strong><br>
+                Organize. Viaje. Aproveite.
+            </p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Naiara Cassimiro | WDD 231
+            </p>
+
+            <p>
+                <a href="atribuicoes.html">Atribuições</a>
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/mala.js" type="module"></script>
+
+</body>
+
+</html>

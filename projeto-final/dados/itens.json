@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "nome": "Protetor solar",
+        "categoria": "Higiene",
+        "viagem": "praia",
+        "descricao": "Ajuda a proteger a pele durante períodos de exposição ao sol."
+    },
+    {
+        "id": 2,
+        "nome": "Roupa de banho",
+        "categoria": "Roupas",
+        "viagem": "praia",
+        "descricao": "Item essencial para aproveitar praia, piscina e outras atividades aquáticas."
+    },
+    {
+        "id": 3,
+        "nome": "Chinelo",
+        "categoria": "Calçados",
+        "viagem": "praia",
+        "descricao": "Calçado leve e prático para utilizar durante os dias de praia."
+    },
+    {
+        "id": 4,
+        "nome": "Óculos de sol",
+        "categoria": "Acessórios",
+        "viagem": "praia",
+        "descricao": "Acessório útil para proteger os olhos e aumentar o conforto em ambientes ensolarados."
+    },
+    {
+        "id": 5,
+        "nome": "Toalha",
+        "categoria": "Outros",
+        "viagem": "praia",
+        "descricao": "Pode ser utilizada após o banho de mar, piscina ou outras atividades."
+    },
+    {
+        "id": 6,
+        "nome": "Casaco",
+        "categoria": "Roupas",
+        "viagem": "campo",
+        "descricao": "Ajuda a manter o conforto durante manhãs, noites e períodos de temperatura mais baixa."
+    },
+    {
+        "id": 7,
+        "nome": "Tênis confortável",
+        "categoria": "Calçados",
+        "viagem": "campo",
+        "descricao": "Adequado para caminhadas e atividades realizadas ao ar livre."
+    },
+    {
+        "id": 8,
+        "nome": "Repelente",
+        "categoria": "Higiene",
+        "viagem": "campo",
+        "descricao": "Ajuda na proteção contra insetos durante atividades em áreas abertas."
+    },
+    {
+        "id": 9,
+        "nome": "Lanterna",
+        "categoria": "Eletrônicos",
+        "viagem": "campo",
+        "descricao": "Útil para iluminação durante a noite ou em locais com pouca luz."
+    },
+    {
+        "id": 10,
+        "nome": "Garrafa de água",
+        "categoria": "Outros",
+        "viagem": "campo",
+        "descricao": "Facilita o transporte de água durante passeios e atividades externas."
+    },
+    {
+        "id": 11,
+        "nome": "Documento de identificação",
+        "categoria": "Documentos",
+        "viagem": "trabalho",
+        "descricao": "Documento importante para identificação durante deslocamentos e compromissos profissionais."
+    },
+    {
+        "id": 12,
+        "nome": "Notebook",
+        "categoria": "Eletrônicos",
+        "viagem": "trabalho",
+        "descricao": "Equipamento utilizado para acessar arquivos, participar de reuniões e realizar atividades profissionais."
+    },
+    {
+        "id": 13,
+        "nome": "Carregador",
+        "categoria": "Eletrônicos",
+        "viagem": "trabalho",
+        "descricao": "Permite manter os dispositivos eletrônicos carregados durante a viagem."
+    },
+    {
+        "id": 14,
+        "nome": "Roupa social",
+        "categoria": "Roupas",
+        "viagem": "trabalho",
+        "descricao": "Opção de vestuário adequada para reuniões, eventos e compromissos profissionais."
+    },
+    {
+        "id": 15,
+        "nome": "Agenda",
+        "categoria": "Outros",
+        "viagem": "trabalho",
+        "descricao": "Ajuda a organizar horários, compromissos e informações importantes da viagem."
+    },
+    {
+        "id": 16,
+        "nome": "Passaporte",
+        "categoria": "Documentos",
+        "viagem": "ferias",
+        "descricao": "Documento necessário para identificação e entrada em diversos destinos internacionais."
+    },
+    {
+        "id": 17,
+        "nome": "Kit de higiene",
+        "categoria": "Higiene",
+        "viagem": "ferias",
+        "descricao": "Reúne itens básicos de higiene pessoal utilizados durante a viagem."
+    },
+    {
+        "id": 18,
+        "nome": "Câmera",
+        "categoria": "Eletrônicos",
+        "viagem": "ferias",
+        "descricao": "Pode ser utilizada para registrar paisagens, passeios e momentos especiais."
+    },
+    {
+        "id": 19,
+        "nome": "Roupas confortáveis",
+        "categoria": "Roupas",
+        "viagem": "ferias",
+        "descricao": "Proporcionam maior conforto durante passeios, deslocamentos e momentos de descanso."
+    },
+    {
+        "id": 20,
+        "nome": "Medicamentos pessoais",
+        "categoria": "Outros",
+        "viagem": "ferias",
+        "descricao": "Medicamentos de uso pessoal que podem ser necessários durante o período da viagem."
+    }
+]

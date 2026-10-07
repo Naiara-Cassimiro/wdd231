@@ -1,0 +1,662 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #263238;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    min-height: 72px;
+    padding: 0.75rem 1rem;
+    background-color: #1f5f6b;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* =========================
+   MENU MOBILE
+========================= */
+
+#menu {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "\2630";
+}
+
+#menu.open::before {
+    content: "\00D7";
+}
+
+#navigation {
+    display: none;
+    grid-column: 1 / -1;
+}
+
+#navigation.open {
+    display: block;
+}
+
+#navigation ul {
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navigation a {
+    display: block;
+    padding: 0.9rem;
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#navigation a:hover,
+#navigation a:focus {
+    background-color: #ffffff;
+    color: #1f5f6b;
+}
+
+#navigation a.active {
+    background-color: #ffffff;
+    color: #1f5f6b;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    min-height: 60vh;
+}
+
+
+/* =========================
+   HERO - PÁGINA INICIAL
+========================= */
+
+.hero {
+    padding: 3rem 1rem;
+    background-color: #f4ebdd;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-label {
+    margin: 0 0 0.75rem;
+    color: #1f5f6b;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #1f5f6b;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.hero-content>p:not(.hero-label) {
+    margin: 1.25rem 0 1.75rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+
+/* =========================
+   BOTÕES GERAIS
+========================= */
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 0.85rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.primary-button {
+    background-color: #1f5f6b;
+    color: #ffffff;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background-color: #174852;
+}
+
+.secondary-button {
+    margin-top: 1.5rem;
+    border: 2px solid #1f5f6b;
+    color: #1f5f6b;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background-color: #1f5f6b;
+    color: #ffffff;
+}
+
+
+/* =========================
+   INTRODUÇÃO - HOME
+========================= */
+
+.introduction {
+    width: min(900px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.introduction h2,
+.travel-types h2 {
+    margin-top: 0;
+    color: #1f5f6b;
+    font-size: 1.8rem;
+}
+
+.introduction p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TIPOS DE VIAGEM - HOME
+========================= */
+
+.travel-types {
+    padding: 3.5rem 1rem;
+    background-color: #f4ebdd;
+    text-align: center;
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: min(1100px, 100%);
+    margin: 2rem auto 0;
+}
+
+.travel-card {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.travel-card h3 {
+    margin-top: 0;
+    color: #1f5f6b;
+}
+
+.travel-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO INTERNO
+========================= */
+
+.page-heading {
+    padding: 3rem 1rem;
+    background-color: #f4ebdd;
+}
+
+.page-heading-content {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.page-heading h1 {
+    margin: 0;
+    color: #1f5f6b;
+    font-size: clamp(2rem, 7vw, 3rem);
+}
+
+.page-heading-content>p:last-child {
+    max-width: 650px;
+    margin: 1rem 0 0;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   LISTA DE ITENS
+========================= */
+
+.packing-section {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.packing-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.packing-header h2 {
+    margin: 0 0 0.5rem;
+    color: #1f5f6b;
+}
+
+.packing-header p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FILTRO
+========================= */
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-container label {
+    color: #1f5f6b;
+    font-weight: 700;
+}
+
+.filter-container select {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.7rem;
+    border: 1px solid #66777b;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #263238;
+    font: inherit;
+}
+
+
+/* =========================
+   CARDS DINÂMICOS
+========================= */
+
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #d8ddde;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 14px rgba(38, 50, 56, 0.08);
+}
+
+.item-category {
+    align-self: flex-start;
+    padding: 0.35rem 0.65rem;
+    border-radius: 20px;
+    background-color: #f4ebdd;
+    color: #1f5f6b;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.item-card h3 {
+    margin: 1rem 0 0.75rem;
+    color: #1f5f6b;
+}
+
+.item-card p {
+    margin: 0 0 0.9rem;
+    line-height: 1.5;
+}
+
+.item-card p:last-of-type {
+    flex-grow: 1;
+}
+
+.item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.item-actions button {
+    min-height: 44px;
+    padding: 0.7rem 0.9rem;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.details-button {
+    border: 2px solid #1f5f6b;
+    background-color: #ffffff;
+    color: #1f5f6b;
+}
+
+.details-button:hover,
+.details-button:focus {
+    background-color: #f4ebdd;
+}
+
+.add-button {
+    border: 2px solid #1f5f6b;
+    background-color: #1f5f6b;
+    color: #ffffff;
+}
+
+.add-button:hover,
+.add-button:focus {
+    border-color: #174852;
+    background-color: #174852;
+}
+
+
+/* =========================
+   MENSAGEM DE ERRO
+========================= */
+
+.error-message {
+    padding: 1rem;
+    border-left: 5px solid #1f5f6b;
+    background-color: #f4ebdd;
+}
+
+
+/* =========================
+   MINHA LISTA
+========================= */
+
+.saved-items {
+    padding: 3rem 1rem;
+    background-color: #f4ebdd;
+}
+
+.saved-items-content {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.saved-items h2 {
+    margin-top: 0;
+    color: #1f5f6b;
+}
+
+.saved-items p {
+    line-height: 1.6;
+}
+
+#saved-count {
+    color: #1f5f6b;
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+#item-dialog {
+    width: min(520px, calc(100% - 2rem));
+    padding: 2rem;
+    border: 0;
+    border-radius: 12px;
+    color: #263238;
+    box-shadow: 0 12px 35px rgba(38, 50, 56, 0.25);
+}
+
+#item-dialog::backdrop {
+    background-color: rgba(38, 50, 56, 0.65);
+}
+
+#close-dialog {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: #1f5f6b;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#dialog-content h2 {
+    padding-right: 2rem;
+    color: #1f5f6b;
+}
+
+#dialog-content p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    padding: 2rem 1rem;
+    background-color: #1f5f6b;
+    color: #ffffff;
+}
+
+.footer-content {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.65rem 0;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 640px) {
+
+    .travel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .packing-header {
+        grid-template-columns: 1fr 240px;
+        align-items: end;
+    }
+
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-actions {
+        flex-direction: row;
+    }
+
+    .item-actions button {
+        flex: 1;
+    }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 800px) {
+
+    header {
+        grid-template-columns: auto 1fr;
+        padding: 0.75rem max(2rem, calc((100% - 1400px) / 2));
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #navigation {
+        display: block;
+        grid-column: auto;
+    }
+
+    #navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
+    #navigation a {
+        padding: 0.7rem 1rem;
+    }
+
+    .hero {
+        padding: 4.5rem 2rem;
+    }
+
+    .hero-container {
+        width: min(1400px, 100%);
+        grid-template-columns:
+            minmax(0, 1fr) minmax(400px, 1fr);
+        gap: 4rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.6rem, 4vw, 3.7rem);
+    }
+
+    .hero-image {
+        box-shadow: 0 12px 30px rgba(38, 50, 56, 0.16);
+    }
+
+    .introduction {
+        width: min(1000px, calc(100% - 4rem));
+    }
+
+    .travel-grid {
+        width: min(1400px, 100%);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .page-heading-content {
+        width: min(1400px, 100%);
+    }
+
+    .packing-section {
+        width: min(1400px, calc(100% - 4rem));
+    }
+
+    .packing-header {
+        grid-template-columns: 1fr 280px;
+        gap: 3rem;
+    }
+
+    .items-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .saved-items-content {
+        width: min(1400px, 100%);
+    }
+
+    .footer-content {
+        width: min(1400px, 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        text-align: left;
+    }
+}

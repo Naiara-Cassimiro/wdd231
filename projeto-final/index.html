@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mala Pronta | Organizador de Viagens</title>
+
+    <meta name="description" content="Organize sua mala de viagem de forma simples e prática com o Mala Pronta.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mala Pronta | Organizador de Viagens">
+    <meta property="og:description" content="Planeje sua viagem e organize os itens essenciais da sua mala.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/mala-pronta.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html" aria-label="Mala Pronta - Página inicial">
+            Mala Pronta
+        </a>
+
+        <button id="menu" aria-label="Abrir menu de navegação"></button>
+
+        <nav id="navigation" aria-label="Navegação principal">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Início</a>
+                </li>
+                <li>
+                    <a href="mala.html">Minha Mala</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-container">
+
+                <div class="hero-content">
+                    <p class="hero-label">ORGANIZE • VIAJE • APROVEITE</p>
+
+                    <h1>Sua viagem começa com uma mala bem preparada.</h1>
+
+                    <p>
+                        Organize o que você precisa levar e viaje com
+                        mais tranquilidade.
+                    </p>
+
+                    <a class="primary-button" href="mala.html">
+                        Organizar minha mala
+                    </a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="imagens/mala-viagem.webp" alt="Mala de viagem aberta e organizada com roupas e acessórios"
+                        width="900" height="600">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="introduction">
+            <h2>Prepare sua viagem sem esquecer o essencial</h2>
+
+            <p>
+                O Mala Pronta ajuda você a organizar os itens necessários
+                para diferentes tipos de viagem. Escolha seu destino,
+                confira as sugestões e prepare sua mala de forma simples
+                e prática.
+            </p>
+        </section>
+
+        <section class="travel-types">
+            <h2>Qual será sua próxima viagem?</h2>
+
+            <div class="travel-grid">
+
+                <article class="travel-card">
+                    <h3>Praia</h3>
+                    <p>
+                        Organize roupas, proteção solar e tudo o que
+                        precisa para aproveitar os dias de sol.
+                    </p>
+                </article>
+
+                <article class="travel-card">
+                    <h3>Campo</h3>
+                    <p>
+                        Prepare os itens essenciais para descansar e
+                        aproveitar momentos em contato com a natureza.
+                    </p>
+                </article>
+
+                <article class="travel-card">
+                    <h3>Trabalho</h3>
+                    <p>
+                        Não esqueça documentos, roupas adequadas,
+                        carregadores e eletrônicos importantes.
+                    </p>
+                </article>
+
+                <article class="travel-card">
+                    <h3>Férias</h3>
+                    <p>
+                        Planeje sua mala com tranquilidade para aproveitar
+                        cada momento da sua viagem.
+                    </p>
+                </article>
+
+            </div>
+
+            <a class="secondary-button" href="mala.html">
+                Ver lista de viagem
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                <strong>Mala Pronta</strong><br>
+                Organize. Viaje. Aproveite.
+            </p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Naiara Cassimiro | WDD 231
+            </p>
+
+            <p>
+                <a href="atribuicoes.html">Atribuições</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+
+</body>
+
+</html>
