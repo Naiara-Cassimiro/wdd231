@@ -69,6 +69,7 @@
         <section class="packing-section">
 
             <div class="packing-header">
+
                 <div>
                     <h2>Itens para sua viagem</h2>
 
@@ -79,6 +80,7 @@
                 </div>
 
                 <div class="filter-container">
+
                     <label for="travel-filter">
                         Tipo de viagem
                     </label>
@@ -87,20 +89,31 @@
                         <option value="todos">
                             Todos
                         </option>
+
                         <option value="praia">
                             Praia
                         </option>
+
                         <option value="campo">
                             Campo
                         </option>
+
                         <option value="trabalho">
                             Trabalho
                         </option>
+
                         <option value="ferias">
                             Férias
                         </option>
                     </select>
+
+                    <p class="saved-count-display">
+                        Itens na mala:
+                        <strong id="saved-count">0</strong>
+                    </p>
+
                 </div>
+
             </div>
 
             <!--
@@ -110,22 +123,6 @@
             <div id="items-container" class="items-container" aria-live="polite">
             </div>
 
-        </section>
-
-        <section class="saved-items">
-            <div class="saved-items-content">
-                <h2>Minha lista</h2>
-
-                <p>
-                    Os itens adicionados à sua mala ficarão salvos
-                    neste navegador para facilitar sua organização.
-                </p>
-
-                <p>
-                    Itens selecionados:
-                    <strong id="saved-count">0</strong>
-                </p>
-            </div>
         </section>
 
     </main>
@@ -142,6 +139,7 @@
     </dialog>
 
     <footer>
+
         <div class="footer-content">
 
             <p>
@@ -150,15 +148,19 @@
             </p>
 
             <p>
-                &copy; <span id="currentyear"></span>
+                &copy;
+                <span id="currentyear"></span>
                 | Naiara Cassimiro | WDD 231
             </p>
 
             <p>
-                <a href="atribuicoes.html">Atribuições</a>
+                <a href="atribuicoes.html">
+                    Atribuições
+                </a>
             </p>
 
         </div>
+
     </footer>
 
     <script src="scripts/main.js" type="module"></script>

@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector("#navigation");
 const currentYear = document.querySelector("#currentyear");
@@ -8,12 +10,9 @@ menuButton.addEventListener("click", () => {
 
     const isOpen = menuButton.classList.contains("open");
 
-    menuButton.setAttribute(
-        "aria-label",
-        isOpen
-            ? "Fechar menu de navegação"
-            : "Abrir menu de navegação"
-    );
+    const menuLabel = isOpen ? "Fechar menu de navegação" : "Abrir menu de navegação";
+
+    menuButton.setAttribute("aria-label", menuLabel);
 });
 
 currentYear.textContent = new Date().getFullYear();

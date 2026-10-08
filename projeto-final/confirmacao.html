@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mensagem Enviada | Mala Pronta</title>
+
+    <meta name="description" content="Confirmação de envio de mensagem para o Mala Pronta.">
+
+    <meta name="author" content="Naiara Cassimiro">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/mala-pronta.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/confirmacao.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html">
+            Mala Pronta
+        </a>
+
+        <button id="menu" type="button" aria-label="Abrir menu de navegação">
+        </button>
+
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mala.html">
+                        Minha Mala
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html" class="active">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+
+            <div class="page-heading-content">
+
+                <p class="hero-label">
+                    MENSAGEM RECEBIDA
+                </p>
+
+                <h1>Obrigado pelo contato!</h1>
+
+                <p>
+                    Sua mensagem foi enviada com sucesso.
+                    Confira abaixo as informações que você enviou.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="confirmation-section">
+
+            <div class="confirmation-card">
+
+                <h2>Dados enviados</h2>
+
+                <div id="confirmation-data">
+
+                    <p>
+                        <strong>Nome:</strong>
+                        <span id="result-name"></span>
+                    </p>
+
+                    <p>
+                        <strong>E-mail:</strong>
+                        <span id="result-email"></span>
+                    </p>
+
+                    <p>
+                        <strong>Tipo de viagem:</strong>
+                        <span id="result-travel"></span>
+                    </p>
+
+                    <p>
+                        <strong>Mensagem:</strong>
+                        <span id="result-message"></span>
+                    </p>
+
+                </div>
+
+                <a class="primary-button" href="index.html">
+                    Voltar ao início
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <p>
+                    <strong>Mala Pronta</strong>
+                </p>
+
+                <p>
+                    Organize. Viaje. Aproveite.
+                </p>
+            </div>
+
+            <p>
+                &copy; 2026 |
+                Naiara Cassimiro |
+                WDD 231
+            </p>
+
+            <p>
+                <a href="atribuicoes.html">
+                    Atribuições
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
