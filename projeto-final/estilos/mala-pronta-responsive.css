@@ -1,0 +1,263 @@
+@media screen and (min-width: 640px) {
+
+    .travel-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .packing-header {
+
+        grid-template-columns: 1fr 240px;
+
+        align-items: end;
+
+    }
+
+    .items-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .item-actions {
+
+        flex-direction: row;
+
+    }
+
+    .item-actions button {
+
+        flex: 1;
+
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    header {
+
+        grid-template-columns: auto 1fr;
+
+        padding: 0.75rem max(2rem, calc((100% - 1400px) / 2));
+
+    }
+
+    #menu {
+
+        display: none;
+
+    }
+
+    #navigation {
+
+        display: block;
+
+        grid-column: auto;
+
+    }
+
+    #navigation ul {
+
+        display: flex;
+
+        justify-content: flex-end;
+
+        gap: 0.5rem;
+
+        margin: 0;
+
+    }
+
+    #navigation a {
+
+        padding: 0.7rem 1rem;
+
+    }
+
+    .hero {
+
+        padding: 4.5rem 2rem;
+
+    }
+
+    .hero-container {
+
+        width: min(1400px, 100%);
+
+        grid-template-columns:
+
+            minmax(0, 1fr) minmax(400px, 1fr);
+
+        gap: 4rem;
+
+    }
+
+    .hero h1 {
+
+        font-size: clamp(2.6rem, 4vw, 3.7rem);
+
+    }
+
+    .hero-image {
+
+        box-shadow: 0 12px 30px rgba(38, 50, 56, 0.16);
+
+    }
+
+    .introduction {
+
+        width: min(1000px, calc(100% - 4rem));
+
+    }
+
+    .travel-grid {
+
+        width: min(1400px, 100%);
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 1.5rem;
+
+    }
+
+    .page-heading-content {
+
+        width: min(1400px, 100%);
+
+    }
+
+    .packing-section {
+
+        width: min(1400px, calc(100% - 4rem));
+
+    }
+
+    .packing-header {
+
+        grid-template-columns: 1fr 280px;
+
+        gap: 3rem;
+
+    }
+
+    .items-container {
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 1.5rem;
+
+    }
+
+    .saved-items-content {
+
+        width: min(1400px, 100%);
+
+    }
+
+    .contact-section {
+
+        grid-template-columns:
+
+            minmax(0, 0.8fr) minmax(400px, 1fr);
+
+        gap: 5rem;
+
+        width: min(1400px, calc(100% - 4rem));
+
+        align-items: start;
+
+    }
+
+    .contact-form {
+
+        padding: 2rem;
+
+    }
+
+    .footer-content {
+
+        width: min(1400px, 100%);
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        gap: 2rem;
+
+        text-align: left;
+
+    }
+
+    /* Reserva inicial para os 20 itens; os filtros liberam a altura */
+
+    .items-container:not(.filtered) {
+
+        min-height: 1800px;
+
+    }
+
+    .items-container.filtered {
+
+        min-height: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .confirmation-section {
+
+        width: calc(100% - 2rem);
+
+        padding: 2rem 0 3rem;
+
+    }
+
+    .confirmation-card {
+
+        width: 100%;
+
+        padding: 1.25rem;
+
+        border-radius: 10px;
+
+    }
+
+    .confirmation-card h2 {
+
+        margin-bottom: 1rem;
+
+        padding-bottom: 0.75rem;
+
+        font-size: 1.4rem;
+
+    }
+
+    #confirmation-data {
+
+        gap: 0.6rem;
+
+        margin-bottom: 1.25rem;
+
+    }
+
+    #confirmation-data p {
+
+        padding: 0.8rem;
+
+        font-size: 0.95rem;
+
+    }
+
+    .confirmation-card .primary-button {
+
+        min-height: 44px;
+
+    }
+
+}
