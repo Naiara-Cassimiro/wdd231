@@ -22,6 +22,8 @@ let savedItems =
 ========================= */
 
 async function getTravelItems() {
+    itemsContainer.classList.add("loading");
+
     try {
         const response = await fetch(itemsURL);
 
@@ -44,9 +46,10 @@ async function getTravelItems() {
                 Tente novamente mais tarde.
             </p>
         `;
+    } finally {
+        itemsContainer.classList.remove("loading");
     }
 }
-
 
 /* =========================
    EXIBIR ITENS
@@ -127,9 +130,12 @@ function displayCurrentFilter() {
     const selectedTravel = travelFilter.value;
 
     if (selectedTravel === "todos") {
+        itemsContainer.classList.remove("filtered");
         displayItems(travelItems);
         return;
     }
+
+    itemsContainer.classList.add("filtered");
 
     const filteredItems = travelItems.filter(
         (item) => item.viagem === selectedTravel
