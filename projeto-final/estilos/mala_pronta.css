@@ -55,7 +55,7 @@ header {
     height: 44px;
     padding: 0;
     border: 0;
-    background: transparent;
+    background-color: #1f5f6b;
     color: #ffffff;
     font-size: 2rem;
     cursor: pointer;
