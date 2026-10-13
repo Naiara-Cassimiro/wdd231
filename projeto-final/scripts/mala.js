@@ -50,7 +50,6 @@ async function getTravelItems() {
         itemsContainer.classList.remove("loading");
     }
 }
-
 /* =========================
    EXIBIR ITENS
 ========================= */
