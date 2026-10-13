@@ -1,5 +1,7 @@
 /* jshint esversion: 8 */
 
+import { formatTravelType } from "./utils.js";
+
 const itemsContainer = document.querySelector("#items-container");
 const travelFilter = document.querySelector("#travel-filter");
 
@@ -98,23 +100,6 @@ function displayItems(items) {
         itemsContainer.appendChild(card);
     });
 }
-
-
-/* =========================
-   FORMATAR TIPO DE VIAGEM
-========================= */
-
-function formatTravelType(travelType) {
-    const travelNames = {
-        praia: "Praia",
-        campo: "Campo",
-        trabalho: "Trabalho",
-        ferias: "Férias"
-    };
-
-    return travelNames[travelType] || travelType;
-}
-
 
 /* =========================
    FILTRAR ITENS
