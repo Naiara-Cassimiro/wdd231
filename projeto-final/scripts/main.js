@@ -15,4 +15,6 @@ menuButton.addEventListener("click", () => {
     menuButton.setAttribute("aria-label", menuLabel);
 });
 
-currentYear.textContent = new Date().getFullYear();
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
