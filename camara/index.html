@@ -46,12 +46,14 @@
             <span class="brand-city">São Paulo</span>
         </div>
 
-        <button id="menu" aria-label="Abrir menu de navegação"></button>
+        <button id="menu" type="button" aria-label="Abrir menu de navegação"></button>
 
-        <nav id="navigation">
+        <nav id="navigation" aria-label="Navegação principal">
             <ul>
                 <li>
-                    <a href="index.html" class="active">Início</a>
+                    <a href="index.html" class="active" aria-current="page">
+                        Início
+                    </a>
                 </li>
                 <li>
                     <a href="diretorio.html">Diretório</a>
@@ -84,7 +86,7 @@
         </section>
 
         <!-- EVENTOS E CLIMA -->
-        <section class="home-content">
+        <div class="home-content">
 
             <!-- EVENTOS -->
             <section class="events">
@@ -140,22 +142,20 @@
 
                     <h3>Previsão</h3>
 
-                    <div id="forecast-container">
-                    </div>
+                    <div id="forecast-container"></div>
 
                 </div>
 
             </section>
 
-        </section>
+        </div>
 
         <!-- EMPRESAS EM DESTAQUE -->
         <section class="spotlights">
 
             <h2>Empresas em Destaque</h2>
 
-            <div id="spotlight-container">
-            </div>
+            <div id="spotlight-container"></div>
 
         </section>
 
@@ -169,9 +169,7 @@
             </p>
 
             <p>São Paulo, SP - Brasil</p>
-
             <p>contato@camarasaopaulo.com.br</p>
-
             <p>+55 (11) 0000-0000</p>
         </div>
 
