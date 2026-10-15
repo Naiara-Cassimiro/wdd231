@@ -1,27 +1,18 @@
+
+import { locais } from "../dados/locais.mjs";
+
 /* =========================
    CARDS DOS LOCAIS
 ========================= */
 
 const placesContainer = document.querySelector("#places-container");
-const placesURL = "dados/locais.json";
-
-async function getPlaces() {
-    try {
-        const response = await fetch(placesURL);
-
-        if (!response.ok) {
-            throw new Error("Não foi possível carregar os locais.");
-        }
-
-        const places = await response.json();
-
-        displayPlaces(places);
-    } catch (error) {
-        console.error("Erro ao carregar os locais:", error);
-    }
-}
 
 function displayPlaces(places) {
+    if (!placesContainer) {
+        console.error("Contêiner dos locais não encontrado.");
+        return;
+    }
+
     placesContainer.innerHTML = "";
 
     places.forEach((place, index) => {
@@ -36,14 +27,12 @@ function displayPlaces(places) {
         const image = document.createElement("img");
         image.src = `imagens/${place.imagem}`;
         image.alt = `Vista de ${place.nome}`;
-        image.width = 600;
-        image.height = 400;
+        image.width = 300;
+        image.height = 200;
+        image.decoding = "async";
 
-        /*
-         * A primeira imagem pode ser o elemento LCP.
-         * Por isso, ela recebe prioridade alta e não usa lazy loading.
-         * As demais imagens continuam usando carregamento lento.
-         */
+        // Primeira imagem com prioridade alta.
+        // As demais utilizam carregamento lento.
         if (index === 0) {
             image.fetchPriority = "high";
         } else {
@@ -76,7 +65,7 @@ function displayPlaces(places) {
     });
 }
 
-getPlaces();
+displayPlaces(locais);
 
 /* =========================
    MENSAGEM DE VISITA
@@ -84,28 +73,28 @@ getPlaces();
 
 const visitMessage = document.querySelector("#visit-message");
 
-const lastVisit = localStorage.getItem("lastVisit");
-const currentVisit = Date.now();
+if (visitMessage) {
+    const lastVisit = localStorage.getItem("lastVisit");
+    const currentVisit = Date.now();
+    const millisecondsPerDay = 1000 * 60 * 60 * 24;
 
-const millisecondsPerDay = 1000 * 60 * 60 * 24;
-
-if (!lastVisit) {
-    visitMessage.textContent =
-        "Bem-vindo! Informe-nos se tiver alguma dúvida.";
-} else {
-    const difference = currentVisit - Number(lastVisit);
-    const days = Math.floor(difference / millisecondsPerDay);
-
-    if (days < 1) {
+    if (lastVisit === null) {
         visitMessage.textContent =
-            "De volta tão cedo! Incrível!";
-    } else if (days === 1) {
-        visitMessage.textContent =
-            "Você visitou esta página há 1 dia.";
+            "Boas-vindas! Entre em contato conosco caso tenha alguma dúvida.";
     } else {
-        visitMessage.textContent =
-            `Você visitou esta página há ${days} dias.`;
-    }
-}
+        const difference = currentVisit - Number(lastVisit);
+        const days = Math.floor(difference / millisecondsPerDay);
 
-localStorage.setItem("lastVisit", currentVisit);
+        if (days < 1) {
+            visitMessage.textContent = "Já voltou? Que legal!";
+        } else if (days === 1) {
+            visitMessage.textContent =
+                "Seu último acesso foi há 1 dia.";
+        } else {
+            visitMessage.textContent =
+                `Seu último acesso foi há ${days} dias.`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", String(currentVisit));
+}

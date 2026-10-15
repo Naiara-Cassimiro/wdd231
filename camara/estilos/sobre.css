@@ -364,3 +364,65 @@ footer {
 footer p {
     margin: 0.4rem 0;
 }
+
+/* =========================
+   AJUSTES RESPONSIVOS
+========================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+main,
+.discover,
+.places-container,
+.place-card,
+.discover-intro {
+    min-width: 0;
+}
+
+.places-container {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.place-card {
+    max-width: 100%;
+}
+
+.place-card img {
+    max-width: 100%;
+}
+
+/* Celulares */
+@media screen and (max-width: 640px) {
+    .places-container {
+        grid-template-columns: minmax(0, 1fr);
+
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .places-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Computadores */
+@media screen and (min-width: 1025px) {
+    .places-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
