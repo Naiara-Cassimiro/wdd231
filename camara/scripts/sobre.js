@@ -50,10 +50,21 @@ function displayPlaces(places) {
         const button = document.createElement("button");
         button.type = "button";
         button.textContent = "Saiba mais";
+
         button.setAttribute(
             "aria-label",
             `Saiba mais sobre ${place.nome}`
         );
+
+        // Exibe mais informações ao clicar no botão.
+        button.addEventListener("click", () => {
+            const message =
+                `${place.nome}\n\n` +
+                `Endereço: ${place.endereco}\n\n` +
+                `${place.descricao}`;
+
+            window.alert(message);
+        });
 
         card.appendChild(title);
         card.appendChild(figure);
