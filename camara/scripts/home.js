@@ -15,7 +15,14 @@ async function getSpotlightMembers() {
             member => member.membershipLevel === 2 || member.membershipLevel === 3
         );
 
-        const shuffledMembers = qualifiedMembers.sort(() => Math.random() - 0.5);
+        const shuffledMembers = [...qualifiedMembers];
+
+        for (let i = shuffledMembers.length - 1; i > 0; i--) {
+            const randomIndex = Math.floor(Math.random() * (i + 1));
+
+            [shuffledMembers[i], shuffledMembers[randomIndex]] =
+                [shuffledMembers[randomIndex], shuffledMembers[i]];
+        }
 
         const selectedMembers = shuffledMembers.slice(0, 3);
 
