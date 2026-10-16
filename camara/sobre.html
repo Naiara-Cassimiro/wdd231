@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Nós | Câmara de Comércio de São Paulo</title>
+    <title>About | São Paulo Chamber of Commerce</title>
 
     <meta name="description"
         content="Descubra locais de interesse, cultura, lazer e oportunidades em São Paulo com a Câmara de Comércio de São Paulo.">
@@ -13,7 +13,7 @@
     <meta name="author" content="Naiara Cassimiro">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,14 +51,29 @@
             <span class="brand-city">São Paulo</span>
         </div>
 
-        <button id="menu" aria-label="Abrir menu de navegação"></button>
+        <button id="menu" type="button" aria-label="Abrir menu de navegação" aria-controls="navigation"
+            aria-expanded="false">
+        </button>
 
-        <nav id="navigation">
+        <nav id="navigation" aria-label="Navegação principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="diretorio.html">Diretório</a></li>
-                <li><a href="associacao.html">Associe-se</a></li>
-                <li><a href="sobre.html" class="active">Descubra</a></li>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="diretorio.html">Diretório</a>
+                </li>
+
+                <li>
+                    <a href="associacao.html">Associe-se</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html" class="active" aria-current="page">
+                        Descubra
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -68,7 +83,9 @@
 
         <h1>Descubra São Paulo</h1>
 
-        <aside id="visit-message" class="visit-message"></aside>
+        <!-- Mensagem de visitas -->
+        <aside id="visit-message" class="visit-message" aria-live="polite">
+        </aside>
 
         <!-- Introdução -->
         <section class="discover-intro">
@@ -87,7 +104,10 @@
         <section class="discover">
 
             <h2>Locais de Interesse</h2>
-            <div id="places-container" class="places-container"></div>
+
+            <div id="places-container" class="places-container">
+            </div>
+
         </section>
 
     </main>
@@ -95,7 +115,11 @@
     <footer>
 
         <div class="contact-info">
-            <p><strong>Câmara de Comércio de São Paulo</strong></p>
+
+            <p>
+                <strong>Câmara de Comércio de São Paulo</strong>
+            </p>
+
             <p>São Paulo, SP - Brasil</p>
 
             <p>contato@camarasaopaulo.com.br</p>
