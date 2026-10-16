@@ -12,7 +12,7 @@ html {
 
 body {
     margin: 0;
-    min-width: 320px;
+    min-width: 0;
     font-family: "Roboto", sans-serif;
     background-color: #f5f5f5;
     color: #222;
@@ -24,6 +24,7 @@ body {
 
 header {
     width: 100%;
+    min-width: 0;
     background-color: #243b53;
     color: white;
     padding: 1rem;
@@ -39,7 +40,7 @@ header {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.3;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .brand-city {
@@ -60,11 +61,11 @@ header {
 }
 
 #menu::before {
-    content: "☰";
+    content: "\2630";
 }
 
 #menu.open::before {
-    content: "✕";
+    content: "\2715";
 }
 
 #menu:focus-visible,
@@ -163,7 +164,7 @@ h1 {
 }
 
 /* =========================
-   CARTÕES
+   CARTÕES DAS EMPRESAS
 ========================= */
 
 #members {
@@ -260,6 +261,7 @@ h1 {
 
 footer {
     width: 100%;
+    min-width: 0;
     background-color: #243b53;
     color: white;
     padding: 1rem;
@@ -277,10 +279,6 @@ footer p {
 ========================= */
 
 @media screen and (max-width: 599px) {
-
-    header {
-        padding: 1rem;
-    }
 
     .brand-name {
         font-size: 1.2rem;
@@ -386,6 +384,7 @@ footer p {
 
 /* =========================
    TELAS GRANDES
+   A PARTIR DE 1100px
 ========================= */
 
 @media screen and (min-width: 1100px) {
