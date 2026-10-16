@@ -17,7 +17,7 @@ function displayPlaces(places) {
 
     places.forEach((place, index) => {
         const card = document.createElement("article");
-        card.classList.add("place-card");
+        card.classList.add("place-card", `card${index + 1}`);
 
         const title = document.createElement("h2");
         title.textContent = place.nome;
@@ -29,15 +29,10 @@ function displayPlaces(places) {
         image.alt = `Vista de ${place.nome}`;
         image.width = 300;
         image.height = 200;
-        image.decoding = "async";
 
-        // Primeira imagem com prioridade alta.
-        // As demais utilizam carregamento lento.
-        if (index === 0) {
-            image.fetchPriority = "high";
-        } else {
-            image.loading = "lazy";
-        }
+        // Carregamento lento das imagens
+        image.loading = "lazy";
+        image.decoding = "async";
 
         figure.appendChild(image);
 
@@ -56,7 +51,7 @@ function displayPlaces(places) {
             `Saiba mais sobre ${place.nome}`
         );
 
-        // Exibe mais informações ao clicar no botão.
+        // Informações exibidas ao clicar no botão
         button.addEventListener("click", () => {
             const message =
                 `${place.nome}\n\n` +
