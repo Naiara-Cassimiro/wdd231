@@ -1,20 +1,29 @@
-/* CONFIGURAÇÕES GERAIS */
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     margin: 0;
+    min-width: 320px;
     font-family: "Roboto", sans-serif;
     background-color: #f5f5f5;
     color: #222;
-    min-width: 320px;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
+    width: 100%;
     background-color: #243b53;
     color: white;
     padding: 1rem;
@@ -23,18 +32,23 @@ header {
 .brand {
     display: flex;
     flex-direction: column;
+    min-width: 0;
 }
 
 .brand-name {
     font-size: 1.4rem;
     font-weight: 700;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
 }
 
 .brand-city {
     font-size: 1rem;
 }
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 #menu {
     background: none;
@@ -83,8 +97,6 @@ header {
     border-radius: 4px;
 }
 
-/* WAYFINDING */
-
 #navigation a.active,
 #navigation a[aria-current="page"] {
     background-color: white;
@@ -97,11 +109,14 @@ header {
     color: #243b53;
 }
 
-/* MAIN */
+/* =========================
+   MAIN
+========================= */
 
 main {
     width: 100%;
     max-width: 1200px;
+    min-width: 0;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -110,25 +125,33 @@ h1 {
     margin: 1rem 0 1.5rem;
     color: #243b53;
     text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    line-height: 1.3;
+    overflow-wrap: break-word;
 }
 
-/* BOTÕES GRADE / LISTA */
+/* =========================
+   BOTÕES GRADE / LISTA
+========================= */
 
 .view-buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
 }
 
 .view-buttons button {
+    min-width: 100px;
     border: 2px solid #243b53;
     border-radius: 6px;
     background-color: white;
     color: #243b53;
-    padding: 0.7rem 1.2rem;
+    padding: 0.7rem 1rem;
     font-family: inherit;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
 }
@@ -139,17 +162,13 @@ h1 {
     color: white;
 }
 
-/* VISUALIZAÇÃO EM GRADE */
+/* =========================
+   CARTÕES
+========================= */
 
 #members {
     width: 100%;
     min-width: 0;
-}
-
-#members.grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1rem;
 }
 
 #members section {
@@ -165,11 +184,13 @@ h1 {
     margin: 0.75rem 0;
     color: #243b53;
     font-size: 1.25rem;
+    line-height: 1.3;
     overflow-wrap: anywhere;
 }
 
 #members p {
     margin: 0.5rem 0;
+    line-height: 1.5;
     overflow-wrap: anywhere;
 }
 
@@ -184,13 +205,26 @@ h1 {
 
 #members a {
     display: inline-block;
+    max-width: 100%;
     margin-top: 0.75rem;
     color: #174d7c;
     font-weight: 500;
     overflow-wrap: anywhere;
 }
 
-/* VISUALIZAÇÃO EM LISTA */
+/* =========================
+   VISUALIZAÇÃO EM GRADE
+========================= */
+
+#members.grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+/* =========================
+   VISUALIZAÇÃO EM LISTA
+========================= */
 
 #members.list {
     display: block;
@@ -220,9 +254,12 @@ h1 {
     min-width: 0;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
+    width: 100%;
     background-color: #243b53;
     color: white;
     padding: 1rem;
@@ -234,7 +271,43 @@ footer p {
     overflow-wrap: anywhere;
 }
 
-/* TABLETS */
+/* =========================
+   MOBILE
+   ATÉ 599px
+========================= */
+
+@media screen and (max-width: 599px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .view-buttons button {
+        min-width: 100px;
+        padding: 0.65rem 0.9rem;
+    }
+
+    #members.grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #members section {
+        padding: 0.85rem;
+    }
+}
+
+/* =========================
+   TABLETS
+   A PARTIR DE 600px
+========================= */
 
 @media screen and (min-width: 600px) {
 
@@ -243,8 +316,7 @@ footer p {
     }
 
     #members.list section {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: center;
         gap: 0.75rem;
     }
@@ -254,7 +326,10 @@ footer p {
     }
 }
 
-/* COMPUTADORES */
+/* =========================
+   COMPUTADORES
+   A PARTIR DE 900px
+========================= */
 
 @media screen and (min-width: 900px) {
 
@@ -287,8 +362,7 @@ footer p {
     }
 
     #members.grid {
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     #members.list section {
@@ -310,7 +384,9 @@ footer p {
     }
 }
 
-/* TELAS GRANDES */
+/* =========================
+   TELAS GRANDES
+========================= */
 
 @media screen and (min-width: 1100px) {
 
